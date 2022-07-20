@@ -6,20 +6,20 @@ const app = document.createElement("div");
 document.body.append(app);
 
 app.innerHTML = ` 
-  <div id="top">
-    <img src="/assets/search.jpg" alt="blank image" />
-    <h1>Search Here!</h1>
-    </div>
-    <div id="main">
-    <div>
-      <label for="Title">Title:</label>
-      <input type="text" id="Title" name="Title" /><span id="titleErr"></span>
-    </div>
-    <div>
+<div id="top">
+  <img src="/assets/search.jpg" alt="blank image" />
+  <h1>Search Here!</h1>
+</div>
+<div id="main">
+  <div id="title-div">
+    <label for="Title">Title:</label>
+    <input type="text" id="Title" name="Title" /><span id="titleErr"></span>
+  </div>
+  <div id="year-div">
     <label for="Year">Year:</label>
     <input type="text" id="Year" name="Year" /><span id="yearErr"></span>
-    </div>
-    <div>
+  </div>
+  <div id="plot-div">
     <label for="plotLength">Plot Length:</label>
     <br />
     <input type="radio" value="Short" id="Short" name="plot" /> Short
