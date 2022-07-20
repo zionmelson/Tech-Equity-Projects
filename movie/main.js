@@ -1,6 +1,33 @@
 import grabAPI from "./lookup";
 import allAPI from "./findall";
 
+const app = document.createElement("div");
+
+document.body.append(app);
+
+app.innerHTML = ` <div id="top">
+<img src="/assets/search.jpg" alt="blank image" />
+<h1>Search Here!</h1>
+</div>
+<div id="main">
+<div>
+  <label for="Title">Title:</label>
+  <input type="text" id="Title" name="Title" /><span id="titleErr"></span>
+</div>
+<div>
+  <label for="Year">Year:</label>
+  <input type="text" id="Year" name="Year" /><span id="yearErr"></span>
+</div>
+<div>
+  <label for="plotLength">Plot Length:</label>
+  <br />
+  <input type="radio" value="Short" id="Short" name="plot" /> Short
+  <input type="radio" value="Long" id="Long" name="plot" /> Long
+</div>
+<button type="button" id="submit">Submit</button>
+<button type="button" id="submitAll">Find All</button>
+</div>`;
+
 const title = document.getElementById("Title");
 const year = document.getElementById("Year");
 
