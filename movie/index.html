@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="top">
+      <img src="/assets/search.jpg" alt="blank image" />
+      <h1>Search Here!</h1>
+    </div>
+    <div id="main">
+      <div>
+        <label for="Title">Title:</label>
+        <input type="text" id="Title" name="Title" /><span id="titleErr"></span>
+      </div>
+      <div>
+        <label for="Year">Year:</label>
+        <input type="text" id="Year" name="Year" /><span id="yearErr"></span>
+      </div>
+      <div>
+        <label for="plotLength">Plot Length:</label>
+        <br />
+        <input type="radio" value="Short" id="Short" name="plot" /> Short
+        <input type="radio" value="Long" id="Long" name="plot" /> Long
+      </div>
+      <button type="button" id="submit">Submit</button>
+      <button type="button" id="submitAll">Find All</button>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
